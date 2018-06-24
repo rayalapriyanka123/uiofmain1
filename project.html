@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+		<!-- Website CSS style -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+
+		<!-- Website Font style -->
+	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+		<link rel="stylesheet" href="main.css">
+		<!-- Google Fonts -->
+		<link href='https://fonts.googleapis.com/css?family=Passion+One' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
+		<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+        <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/css/bootstrap-select.min.css" rel="stylesheet" />
+
+
+		<title>Admin</title>
+	</head>
+	<body>
+		<div class="container">
+			<div class="row main">
+				<div class="main-login main-center">
+				<h3>Drive Registration.</h3>
+					<form class="" method="post" action="#">
+						
+						<div class="form-group">
+							<label for="name" class="cols-sm-2 control-label">Your Name</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+									<input type="text" class="form-control" name="name" id="name"  placeholder="Enter your Name" onchange=validateFirstname()/>
+                                   <div>
+                                    <!-- <span class="span-for-error alert alert-danger" id="errorfirstname">Please enter your preferred name</span> -->
+                                    </div>
+                                </div>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="date" class="cols-sm-2 control-label">Date</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-calendar fa" aria-hidden="true"></i></span>
+                                <input type="date" class="form-control datepicker" name="date" id="dt" data-date-format="mm/dd/yyyy">
+                                <div>
+                                    <span class="span-for-errors alert alert-danger" id="errordate">Please enter Date</span>
+                                </div>     
+                            </div>
+							</div>
+						</div>
+							<div class="form-group">
+							<label for="startTime" class="cols-sm-2 control-label">Start Time</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-clock-o fa" aria-hidden="true"></i></span>
+								<input type="time" class="form-control" name="time" id="Starttime">
+								</div>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="endTime" class="cols-sm-2 control-label">End Time</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-clock-o fa" aria-hidden="true"></i></span>
+								<input type="time" class="form-control" name="time" id="endTime">
+								</div>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="Location" class="cols-sm-2 control-label">Location</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+                                    <span class="input-group-addon"><i class="fa fa-map-marker fa" aria-hidden="true"></i></span>
+								 <select id="what" class="form-control selectpicker show-tick" multiple>
+                                    <option selected>Bangalore</option>
+                                    <option>Hyderabad</option>
+                                    <option>Chennai</option>
+                                    <option>Pune</option>
+                                </select>
+								</div>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="skills" class="cols-sm-2 control-label">Skills</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+                                    <span class="input-group-addon"><i class="fa fa-book fa" aria-hidden="true"></i></span>
+								 <select id="what" class="form-control selectpicker show-tick" multiple>
+                                    <option selected>React</option>
+                                    <option>Angular</option>
+                                    <option>JavaScript</option>
+                                    <option>Bootstrap</option>
+                                </select>
+								</div>
+							</div>
+						</div>
+						
+						
+				
+
+						<div class="form-group ">
+							<a type="button" id="button" class="btn btn-primary ">Create Event</a>
+								<a type="button" id="button" class="btn btn-primary">Reset</a>
+						</div>
+						
+					</form>
+				</div>
+			</div>
+		</div>
+
+		 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/js/bootstrap-select.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/JavaScript" src="main.js"></script>
+</body>
+</html>
